@@ -50,7 +50,22 @@
         body {
             font-family: 'misaki_gothic', sans-serif;
         }
+
+        a {
+            text-decoration: none;
+        }
     </style>
+    <script>
+        const changeDisplay = (target) => {
+            var ele = document.getElementById(target);
+
+            if (ele.style.display == 'none') {
+                ele.style.display = 'block';
+            } else {
+                ele.style.display = 'none';
+            }
+        };
+    </script>
     <meta name="theme-color" content="#000000">
 </head>
 
@@ -67,10 +82,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test/UvU/"><img
-                                src="https://iwasaku.github.io/test/UvU/favicon/favicon-152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test/UvU/favicon/favicon-192.png" class="card-img-top"
                                 alt="U.v.U."></a>
                         <div class="card-body">
                             <h5 class="card-title">U.v.U.</h5>
+                            <div onclick="changeDisplay('test')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test/UvU/"
+                                id="test" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text"><a
                                     href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest%2Fuvu%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%3A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのスコア</a>
@@ -82,10 +100,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test3/SHU/"><img
-                                src="https://iwasaku.github.io/test3/SHU/favicon/favicon-152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test3/SHU/favicon/favicon-192.png" class="card-img-top"
                                 alt="SHRKN NG-NG>"></a>
                         <div class="card-body">
                             <h5 class="card-title">SHRKN NG-NG</h5>
+                            <div onclick="changeDisplay('test3')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test3/SHU/"
+                                id="test3" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest3%2FSHU%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%3A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのスコア</a>
@@ -97,10 +118,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test4/KMT/"><img
-                                src="https://iwasaku.github.io/test4/KMT/favicon/favicon-152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test4/KMT/favicon/favicon-192.png" class="card-img-top"
                                 alt="NMLS 100"></a>
                         <div class="card-body">
                             <h5 class="card-title">NMLS 100</h5>
+                            <div onclick="changeDisplay('test4')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test4/KMT/"
+                                id="test4" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest4%2FKMT%2F%20%E3%81%A0%E3%81%A3%E3%81%9F%EF%BC%81&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのフロア数</a>
@@ -112,10 +136,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test5/UDN/"><img
-                                src="https://iwasaku.github.io/test5/UDN/favicon/icon-152x152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test5/UDN/favicon/icon-192x192.png" class="card-img-top"
                                 alt="UDN"></a>
                         <div class="card-body">
                             <h5 class="card-title">UDN</h5>
+                            <div onclick="changeDisplay('test5')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test5/UDN/"
+                                id="test5" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest5%2FUDN%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%EF%BC%9A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのスコア</a>
@@ -127,10 +154,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test7/NEMLESSSTER/"><img
-                                src="https://iwasaku.github.io/test7/NEMLESSSTER/favicon/favicon-152.png"
+                                src="https://iwasaku.github.io/test7/NEMLESSSTER/favicon/favicon-192.png"
                                 class="card-img-top" alt="NEMLESSSTER"></a>
                         <div class="card-body">
                             <h5 class="card-title">NEMLESSSTER</h5>
+                            <div onclick="changeDisplay('test7')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test7/NEMLESSSTER/"
+                                id="test7" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest7%2FNEMLESSSTER%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%3A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなの距離</a>
@@ -142,10 +172,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test6/ZGZG/"><img
-                                src="https://iwasaku.github.io/test6/ZGZG/favicon/favicon-152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test6/ZGZG/favicon/favicon-192.png" class="card-img-top"
                                 alt="ZG-ZG SPTNK"></a>
                         <div class="card-body">
                             <h5 class="card-title">ZG-ZG SPTNK</h5>
+                            <div onclick="changeDisplay('test6')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test6/ZGZG/"
+                                id="test6" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest6%2FZGZG%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%3A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのスコア</a>
@@ -157,10 +190,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test8/COKS/"><img
-                                src="https://iwasaku.github.io/test8/COKS/favicon/favicon-152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test8/COKS/favicon/favicon-192.png" class="card-img-top"
                                 alt="C.O.K.S."></a>
                         <div class="card-body">
                             <h5 class="card-title">C.O.K.S.</h5>
+                            <div onclick="changeDisplay('test8')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test8/COKS/"
+                                id="test8" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest8%2FCOKS%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%EF%BC%9A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなの深さ</a>
@@ -172,10 +208,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test9/TT/"><img
-                                src="https://iwasaku.github.io/test9/TT/favicon/icon-152x152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test9/TT/favicon/icon-192x192.png" class="card-img-top"
                                 alt="T.T."></a>
                         <div class="card-body">
                             <h5 class="card-title">T.T.</h5>
+                            <div onclick="changeDisplay('test9')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test9/TT/"
+                                id="test9" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest9%2FTT%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%3A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなの軒数</a>
@@ -187,10 +226,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test10/PRJNTK/"><img
-                                src="https://iwasaku.github.io/test10/PRJNTK/favicon/favicon-152.png"
+                                src="https://iwasaku.github.io/test10/PRJNTK/favicon/favicon-192.png"
                                 class="card-img-top" alt="PROJECT N.T.K."></a>
                         <div class="card-body">
                             <h5 class="card-title">PROJECT N.T.K.</h5>
+                            <div onclick="changeDisplay('test10')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test10/PRJNTK/"
+                                id="test10" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest10%2FPRJNTK%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%3A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのスコア</a>
@@ -202,10 +244,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test10/PRJNTK_BRS/"><img
-                                src="https://iwasaku.github.io/test10/PRJNTK_BRS/favicon/favicon-152.png"
+                                src="https://iwasaku.github.io/test10/PRJNTK_BRS/favicon/favicon-192.png"
                                 class="card-img-top" alt="PROJECT N.T.K. BRS"></a>
                         <div class="card-body">
                             <h5 class="card-title">PROJECT N.T.K. Ver. B.R.S.</h5>
+                            <div onclick="changeDisplay('test10BRS')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test10/PRJNTK_BRS/"
+                                id="test10BRS" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest10%2F%20B.R.S.%20%E3%82%B9%E3%82%B3%E3%82%A2%3A%20&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのスコア</a>
@@ -221,6 +266,9 @@
                                 alt="0xFFFFFF"></a>
                         <div class="card-body">
                             <h5 class="card-title">0xFFFFFF</h5>
+                            <div onclick="changeDisplay('test12')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test12/FFF/"
+                                id="test12" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest12%2FFFF%2F%20%E3%82%AF%E3%83%AA%E3%82%A2&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのスコア</a>
@@ -232,10 +280,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test13/TPTM/"><img
-                                src="https://iwasaku.github.io/test13/TPTM/favicon/favicon-152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test13/TPTM/favicon/favicon-192.png" class="card-img-top"
                                 alt="TPTM"></a>
                         <div class="card-body">
                             <h5 class="card-title">TPTM</h5>
+                            <div onclick="changeDisplay('test13')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test13/TPTM/"
+                                id="test13" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest13%2FTPTM%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%EF%BC%9A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなの水深</a>
@@ -247,10 +298,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test14/TRCNG/"><img
-                                src="https://iwasaku.github.io/test14/TRCNG/favicon/icon-152x152.png"
+                                src="https://iwasaku.github.io/test14/TRCNG/favicon/icon-192x192.png"
                                 class="card-img-top" alt="TARACHINE GO"></a>
                         <div class="card-body">
                             <h5 class="card-title">TARACHINE GO</h5>
+                            <div onclick="changeDisplay('test14')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test14/TRCNG/"
+                                id="test14" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest14%2FTRCNG%2F%20%E3%81%A6%E3%82%93&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなのスコア</a>
@@ -262,10 +316,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test14/NMLSG/"><img
-                                src="https://iwasaku.github.io/test14/NMLSG/favicon/icon-152x152.png"
+                                src="https://iwasaku.github.io/test14/NMLSG/favicon/icon-192x192.png"
                                 class="card-img-top" alt="NxMxLxSSS GO"></a>
                         <div class="card-body">
                             <h5 class="card-title">NxMxLxSSS GO</h5>
+                            <div onclick="changeDisplay('test14NMLS')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test14/NMLSG/"
+                                id="test14NMLS" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest14%2FNMLSG%2F%20%E3%81%A6%E3%82%93&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなの進捗率</a>
@@ -277,10 +334,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test15/HGYG/"><img
-                                src="https://iwasaku.github.io/test15/HGYG/favicon/favicon-152.png" class="card-img-top"
+                                src="https://iwasaku.github.io/test15/HGYG/favicon/favicon-192.png" class="card-img-top"
                                 alt="HxGxYx"></a>
                         <div class="card-body">
                             <h5 class="card-title">HxGxYx GAME</h5>
+                            <div onclick="changeDisplay('test15')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test15/HGYG/"
+                                id="test15" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text">
                                 <a href="https://twitter.com/search?q=url%3Aiwasaku.github.io%2Ftest15%2FHGYG%2F%20%E3%82%B9%E3%82%B3%E3%82%A2%3A&src=typed_query&f=live"
                                     target="_blank" rel="noreferrer">みんなの平沢</a>
@@ -302,10 +362,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test11/UT-404/SSS1/"><img
-                                src="https://iwasaku.github.io/test11/UT-404/SSS1/favicon/favicon-152.png"
+                                src="https://iwasaku.github.io/test11/UT-404/SSS1/favicon/favicon-192.png"
                                 class="card-img-top" alt="UT-404 Sleepy Space Stage"></a>
                         <div class="card-body">
                             <h5 class="card-title">UT-404 Sleepy Space Stage</h5>
+                            <div onclick="changeDisplay('SSS1')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test11/UT-404/SSS1/"
+                                id="SSS1" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text"></p>
                         </div>
                     </div>
@@ -314,10 +377,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test11/UT-404/SSS2/"><img
-                                src="https://iwasaku.github.io/test11/UT-404/SSS2/favicon/favicon-152.png"
+                                src="https://iwasaku.github.io/test11/UT-404/SSS2/favicon/favicon-192.png"
                                 class="card-img-top" alt="UT-404 Spicy Shooting Stage"></a>
                         <div class="card-body">
                             <h5 class="card-title">UT-404 Spicy Shooting Stage</h5>
+                            <div onclick="changeDisplay('SSS2')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test11/UT-404/SSS2/"
+                                id="SSS2" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text"></p>
                         </div>
                     </div>
@@ -326,10 +392,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test11/UT-404/SSS3/"><img
-                                src="https://iwasaku.github.io/test11/UT-404/SSS3/favicon/favicon-152.png"
+                                src="https://iwasaku.github.io/test11/UT-404/SSS3/favicon/favicon-192.png"
                                 class="card-img-top" alt="UT-404 Stealth Structure Stage"></a>
                         <div class="card-body">
                             <h5 class="card-title">UT-404 Stealth Structure Stage</h5>
+                            <div onclick="changeDisplay('SSS3')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test11/UT-404/SSS3/"
+                                id="SSS3" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text"></p>
                         </div>
                     </div>
@@ -337,10 +406,13 @@
                 <div class="col-sm-2 mb-4">
                     <div class="card">
                         <a href="https://iwasaku.github.io/test11/UT-404/SSS4/"><img
-                                src="https://iwasaku.github.io/test11/UT-404/SSS4/favicon/favicon-152.png"
+                                src="https://iwasaku.github.io/test11/UT-404/SSS4/favicon/favicon-192.png"
                                 class="card-img-top" alt="UT-404 Scarlet Shinobi Stage"></a>
                         <div class="card-body">
                             <h5 class="card-title">UT-404 Scarlet Shinobi Stage</h5>
+                            <div onclick="changeDisplay('SSS4')">QRコード</div>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://iwasaku.github.io/test11/UT-404/SSS4/"
+                                id="SSS4" class="card-img-top" alt="QR" style="display: none;">
                             <p class="card-text"></p>
                         </div>
                     </div>
